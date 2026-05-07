@@ -1,0 +1,43 @@
+{
+  "portfolio": {
+    "initial_capital": 100000.0,
+    "current_equity": 100332.5,
+    "available_cash": 48575.0,
+    "open_pnl": 0,
+    "closed_pnl": 332.5,
+    "last_updated": "2026-04-16T00:11:29.359523"
+  },
+  "trades": [
+    {
+      "trade_id": "TRADE_001",
+      "symbol": "AAPL",
+      "side": "BUY",
+      "size": 100,
+      "entry_price": 150.25,
+      "entry_time": "2026-04-15T22:11:29.295296",
+      "exit_price": 152.5,
+      "exit_time": "2026-04-15T23:11:29.295535",
+      "pnl": 225.0,
+      "pnl_percent": 1.5,
+      "duration_minutes": 60.0,
+      "strategy": "Momentum",
+      "status": "CLOSED"
+    },
+    {
+      "trade_id": "TRADE_002",
+      "symbol": "MSFT",
+      "side": "BUY",
+      "size": 50,
+      "entry_price": 380.0,
+      "entry_time": "2026-04-15T23:41:29.295559",
+      "exit_price": 382.15,
+      "exit_time": "2026-04-16T00:11:29.295565",
+      "pnl": 107.5,
+      "pnl_percent": 0.56,
+      "duration_minutes": 30.0,
+      "strategy": "Mean Reversion",
+      "status": "CLOSED"
+    }
+  ],
+  "positions": []
+}

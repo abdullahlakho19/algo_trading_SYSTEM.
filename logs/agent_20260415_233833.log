@@ -1,0 +1,4 @@
+2026-04-15 23:38:33,103 - __main__ - INFO - Logging initialized: logs\agent_20260415_233833.log
+2026-04-15 23:38:33,104 - __main__ - INFO - [OK] Config loaded: agent_config.json
+2026-04-15 23:38:33,274 - __main__ - INFO - [OK] TradingAgent initialized
+2026-04-15 23:38:33,275 - __main__ - INFO - Signal handlers not supported on this platform

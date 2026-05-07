@@ -1,0 +1,27 @@
+{
+  "backtest_period_days": 30,
+  "symbols": [
+    "AAPL",
+    "GOOGL",
+    "MSFT",
+    "EURUSD=X"
+  ],
+  "total_candles_processed": 0,
+  "signals_generated": 0,
+  "trades_executed": 0,
+  "portfolio_stats": {
+    "total_equity": 100000.0,
+    "cash": 100000.0,
+    "open_positions": 0,
+    "total_positions_value": 0.0,
+    "total_pnl": 0.0,
+    "total_pnl_percent": 0.0,
+    "trades_count": 0,
+    "total_fees": 0.0,
+    "max_equity": 100000.0,
+    "min_equity": 100000.0,
+    "return_percent": 0.0
+  },
+  "backtest_results": [],
+  "timestamp": "2026-05-07T01:16:09.072726"
+}

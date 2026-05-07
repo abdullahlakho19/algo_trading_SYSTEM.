@@ -1,0 +1,4 @@
+2026-04-15 23:35:42,480 - __main__ - INFO - Logging initialized: logs\agent_20260415_233542.log
+2026-04-15 23:35:42,481 - __main__ - INFO - [OK] Config loaded: agent_config.json
+2026-04-15 23:35:42,484 - __main__ - INFO - [OK] TradingAgent initialized
+2026-04-15 23:35:42,485 - __main__ - ERROR - Fatal error: 
