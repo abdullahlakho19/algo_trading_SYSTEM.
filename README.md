@@ -1,5 +1,5 @@
 # 🚀 Institutional Trading Agent
-
+NOTE: THIS IS FOR EDUCATIOANL PURPOSE ONLY 
 ## Quick Links
 - **Just installed?** → Run `validate_environment.py`
 - **Need setup?** → Read [SETUP_STATUS_REPORT.md](SETUP_STATUS_REPORT.md)
