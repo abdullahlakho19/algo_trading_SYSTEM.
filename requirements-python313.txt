@@ -1,0 +1,76 @@
+# ============================================================================
+# REQUIREMENTS-PYTHON313.TXT - Python 3.13 Optimized Dependencies
+# Use this if you encounter build errors with the standard requirements.txt
+# ============================================================================
+
+# ===================== CORE DATA & NUMERICS (Pre-built wheels for 3.13) ====
+numpy==1.26.4
+pandas==2.2.1
+scipy==1.13.0
+
+# ===================== MACHINE LEARNING (Pre-built wheels) ================
+scikit-learn==1.4.2
+xgboost==2.0.3
+lightgbm==4.3.0
+
+# ===================== PYTORCH (Use pre-built binaries) ===================
+torch==2.2.2
+torchvision==0.17.2
+
+# ===================== FINANCIAL DATA (Pure Python or wheels) ============
+alpaca-py==0.22.0
+yfinance==0.2.37
+
+# ===================== SENTIMENT & NLP (Pure Python friendly) ===========
+vaderSentiment==3.3.2
+praw==7.7.1
+finnhub-python==1.3.13
+
+# ===================== SCHEDULING & ASYNC ==========================
+APScheduler==3.10.4
+aiohttp==3.9.3
+httpx==0.27.0
+
+# ===================== DASHBOARD & VISUALIZATION ==================
+streamlit==1.31.1
+plotly==5.20.0
+altair==5.2.0
+kaleido==0.2.1
+
+# ===================== DATA EXPORT ================================
+openpyxl==3.1.2
+xlsxwriter==3.1.9
+
+# ===================== CONFIGURATION & VALIDATION ================
+python-dotenv==1.0.1
+pydantic==2.6.3
+pydantic-settings==2.2.1
+
+# ===================== UTILITIES ==================================
+requests==2.31.0
+click==8.1.7
+tqdm==4.66.2
+loguru==0.7.2
+python-dateutil==2.8.2
+
+# ===================== TESTING ====================================
+pytest==7.4.4
+pytest-asyncio==0.23.3
+black==24.2.0
+
+# ============================================================================
+# INSTALLATION FOR PYTHON 3.13:
+#
+# 1. Use pre-built wheels only (no compilation):
+#    pip install -r requirements-python313.txt --prefer-binary --only-binary :all:
+#
+# 2. If still getting errors, try compatibility mode:
+#    pip install -r requirements-python313.txt --only-binary :all: --no-cache-dir
+#
+# 3. For Alpine/Docker environments:
+#    pip install -r requirements-python313.txt --prefer-binary --disable-pip-version-check
+#
+# 4. If a specific package fails, install it separately:
+#    pip install numpy==1.26.4 --prefer-binary
+#
+# ============================================================================

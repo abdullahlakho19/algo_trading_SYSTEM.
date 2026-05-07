@@ -1,0 +1,5 @@
+2026-04-16 22:56:46,802 - __main__ - INFO - Logging initialized: logs\agent_20260416_225646.log
+2026-04-16 22:56:46,808 - __main__ - INFO - [OK] Config loaded: agent_config.json
+2026-04-16 22:56:46,810 - __main__ - INFO - [OK] TradingAgent initialized
+2026-04-16 22:56:46,810 - __main__ - INFO - Signal handlers not supported on this platform
+2026-04-16 22:57:47,676 - __main__ - INFO - Trading loop: tick 60 | trades 0 | P&L $0.00

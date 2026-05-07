@@ -1,0 +1,123 @@
+# ============================================================================
+# REQUIREMENTS.TXT - Institutional Trading Agent Dependencies
+# Python 3.13+ Compatible
+# ============================================================================
+
+# ===================== CORE DATA & NUMERICS ========================
+numpy==2.4.4                           # Numerical computing (Python 3.14 compatible)
+pandas==3.0.2                         # Data manipulation & analysis (Python 3.14 compatible)
+scipy==1.17.1                         # Scientific computing & statistics (Python 3.14 compatible)
+
+# ===================== MACHINE LEARNING & AI =======================
+scikit-learn==1.8.0                    # RandomForest, IsolationForest, preprocessing (Python 3.14)
+xgboost==3.2.0                         # XGBoost for signal generation (Python 3.14)
+lightgbm==4.6.0                        # LightGBM for fast tree boosting (Python 3.14)
+
+# ===================== DEEP LEARNING (PyTorch - TensorFlow N/A for 3.14) ====
+torch==2.11.0                          # PyTorch for LSTM/CNN patterns (Python 3.14 native)
+torchvision==0.26.0                    # Vision utilities for image processing (Python 3.14)
+
+# ===================== FINANCIAL APIs & DATA FEEDS ==================
+alpaca-py==0.43.2                      # Alpaca stocks/forex execution & data (paper/live mode)
+yfinance>=0.2.40                       # Yahoo Finance historical/real-time data (PRIMARY SOURCE)
+
+# ===================== SENTIMENT & NLP ==========================
+vaderSentiment==3.3.2                  # Financial sentiment scoring (VADER model) (Python 3.14)
+praw==7.8.1                            # Reddit API for social sentiment aggregation (Python 3.14)
+finnhub-python==2.4.27                 # Real-time financial news & company news API (Python 3.14)
+newsapi==0.1.1                         # News aggregation from 80K+ sources globally (Python 3.14)
+
+# ===================== QUANTITATIVE FINANCE ======================
+quantlib-python==1.34                  # Advanced derivatives pricing (NOTE: QuantLib 1.41 used for Python 3.14)
+py-vollib==0.1.20                      # Volatility smile modeling (NOTE: py-vollib 1.0.1 used for Python 3.14)
+statsmodels==0.14.1                    # Statistical modeling & time series
+
+# ===================== BACKTESTING & OPTIMIZATION ================
+backtrader==1.9.80.123                 # Backtesting framework (fallback)
+
+# ===================== WORKFLOW & SCHEDULING ======================
+APScheduler==3.11.2                    # Task scheduling for 24/7 automation (Python 3.14)
+python-dateutil==2.9.0.post0           # Advanced date/time utilities (Python 3.14)
+
+# ===================== ASYNC & HTTP ==============================
+aiohttp==3.13.5                        # Async HTTP (non-blocking API calls) (Python 3.14)
+asyncio-contextmanager==1.0.0          # Async context management
+httpx==0.28.1                          # Modern HTTP client (Python 3.14)
+
+# ===================== DATA EXPORT & REPORTING ===================
+openpyxl==3.1.2                        # Excel export with formatting (trade reports)
+pandas-excel==0.1.0                    # Excel integration
+xlsxwriter==3.1.9                      # Advanced Excel formatting
+
+# ===================== DASHBOARD & VISUALIZATION ==================
+streamlit==1.56.0                      # Web dashboard framework (real-time updates) (Python 3.14)
+plotly==6.6.0                          # Interactive charting and 3D visualizations (Python 3.14)
+altair==6.0.0                          # High-level declarative visualization (Python 3.14)
+kaleido==1.2.0                         # Static image export (PNG/SVG/PDF) for charts (Python 3.14)
+
+# ===================== CONFIGURATION & SECRETS ===================
+python-dotenv==1.0.1                   # Load .env configuration securely
+pydantic==2.6.3                        # Data validation with type hints
+pydantic-settings==2.2.1               # Settings management
+
+# ===================== UTILITIES & INFRASTRUCTURE ================
+requests==2.31.0                       # HTTP requests library
+click==8.1.7                           # CLI argument parsing and decorators (Python 3.14)
+tqdm==4.66.2                           # Progress bars for long operations (Python 3.14)
+loguru==0.7.2                          # Advanced logging with color and rotation (Python 3.14)
+
+# ===================== TESTING & QUALITY ==========================
+pytest==7.4.4                          # Unit testing framework
+pytest-asyncio==0.23.3                 # Async test support
+pytest-cov==4.1.0                      # Code coverage reporting
+black==24.2.0                          # Code formatting (PEP 8)
+flake8==7.0.0                          # Code linting
+mypy==1.8.0                            # Static type checking
+
+# ===================== DATABASE & CACHING ========================
+redis==5.0.1                           # Redis for caching (optional)
+sqlalchemy==2.0.27                     # Database ORM
+psycopg2-binary==2.9.9                 # PostgreSQL driver (optional)
+
+# ===================== TIME SERIES ANALYSIS ======================
+ta==0.10.2                             # Technical analysis indicators
+
+# ===================== OPTIONAL: ADVANCED ML ====================
+# Uncomment if using advanced ML features:
+tensorflow==2.15.0                   # TensorFlow (heavy, ~1GB download)
+ transformers==4.37.2                 # FinBERT for sentiment (700MB)
+catboost==1.2.4                      # CatBoost gradient boosting
+ optuna==3.0.6                        # Hyperparameter optimization
+
+# ===================== MONITORING & LOGGING ====================
+python-logging-loki==0.3.2             # Distributed logging to Grafana Loki (production)
+sentry-sdk==1.42.0                     # Error tracking and performance monitoring (production)
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS:
+# 
+# 1. Basic installation (recommended):
+#    pip install -r requirements.txt
+#
+# 2. With GPU support (CUDA 12.1):
+#    pip install torch==2.2.2 torchvision==0.17.2 torchaudio==0.17.2 --index-url https://download.pytorch.org/whl/cu121
+#    pip install -r requirements.txt
+#
+# 3. Minimal (core only, ~500MB):
+#    pip install numpy pandas scipy scikit-learn xgboost alpaca-py yfinance streamlit plotly
+#
+# 4. If pip install fails with build errors:
+#    pip install -r requirements.txt --prefer-binary --no-build-isolation
+#
+# 5. For Python 3.13 compatibility issues:
+#    pip install -r requirements.txt --prefer-binary --only-binary :all:
+#
+# ============================================================================
+# PYTHON VERSION COMPATIBILITY:
+# 
+# - Python 3.10+: Recommended for optimal performance
+# - Python 3.13: Supported (some packages may require pre-built wheels)
+# - Python 3.9 or earlier: Not recommended (too old for many packages)
+#
+# Check Python version: python --version
+# ============================================================================
